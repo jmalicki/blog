@@ -10,38 +10,38 @@ theme = 'PaperMod'
   description = ''
   keywords = ['blog', 'technology', 'development']
   author = 'Joseph Malicki'
-  
+
   # PaperMod specific settings
   homeInfoParams = { Title = "My Blog", Content = "Welcome to my blog!" }
-  
+
   # Sidebar settings
   sidebar = true
   sidebarOpen = true
-  
+
   # Recent posts in sidebar
   recentPosts = 5
-  
+
   # Related posts
   relatedPosts = 3
-  
+
   # Show tags and categories
   showTags = true
   showCategories = true
-  
+
   # Search functionality
   search = true
-  
+
   # Social links
   socialIcons = [
     { name = 'github', url = 'https://github.com/jmalicki' },
   ]
-  
+
   # Dark mode
   defaultTheme = 'auto'
-  
+
   # Reading time
   showReadingTime = true
-  
+
   # Table of contents
   showToc = true
   toc = true
