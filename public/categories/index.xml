@@ -6,8 +6,15 @@
     <description>Recent content in Categories on My Blog</description>
     <generator>Hugo -- 0.152.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 24 Oct 2025 10:04:01 -0700</lastBuildDate>
+    <lastBuildDate>Fri, 24 Oct 2025 10:22:42 -0700</lastBuildDate>
     <atom:link href="https://jmalicki.github.io/blog/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Conference</title>
+      <link>https://jmalicki.github.io/blog/categories/conference/</link>
+      <pubDate>Fri, 24 Oct 2025 10:22:42 -0700</pubDate>
+      <guid>https://jmalicki.github.io/blog/categories/conference/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Technology</title>
       <link>https://jmalicki.github.io/blog/categories/technology/</link>
