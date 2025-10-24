@@ -2,70 +2,52 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://jmalicki.github.io/blog/categories/</loc>
+    <loc>http://localhost:55702/categories/</loc>
     <lastmod>2025-10-24T10:22:42-07:00</lastmod>
   </url><url>
-    <loc>https://jmalicki.github.io/blog/categories/conference/</loc>
+    <loc>http://localhost:55702/categories/conference/</loc>
     <lastmod>2025-10-24T10:22:42-07:00</lastmod>
   </url><url>
-    <loc>https://jmalicki.github.io/blog/tags/conference/</loc>
+    <loc>http://localhost:55702/tags/conference/</loc>
     <lastmod>2025-10-24T10:22:42-07:00</lastmod>
   </url><url>
-    <loc>https://jmalicki.github.io/blog/tags/deep-learning/</loc>
+    <loc>http://localhost:55702/tags/deep-learning/</loc>
     <lastmod>2025-10-24T10:22:42-07:00</lastmod>
   </url><url>
-    <loc>https://jmalicki.github.io/blog/tags/machine-learning/</loc>
+    <loc>http://localhost:55702/tags/machine-learning/</loc>
     <lastmod>2025-10-24T10:22:42-07:00</lastmod>
   </url><url>
-    <loc>https://jmalicki.github.io/blog/</loc>
+    <loc>http://localhost:55702/</loc>
     <lastmod>2025-10-24T10:22:42-07:00</lastmod>
   </url><url>
-    <loc>https://jmalicki.github.io/blog/posts/</loc>
+    <loc>http://localhost:55702/posts/</loc>
     <lastmod>2025-10-24T10:22:42-07:00</lastmod>
   </url><url>
-    <loc>https://jmalicki.github.io/blog/tags/pytorch/</loc>
+    <loc>http://localhost:55702/tags/pytorch/</loc>
     <lastmod>2025-10-24T10:22:42-07:00</lastmod>
   </url><url>
-    <loc>https://jmalicki.github.io/blog/posts/pytorchcon-2025-conference-report/</loc>
+    <loc>http://localhost:55702/posts/pytorchcon-2025-conference-report/</loc>
     <lastmod>2025-10-24T10:22:42-07:00</lastmod>
   </url><url>
-    <loc>https://jmalicki.github.io/blog/tags/research/</loc>
+    <loc>http://localhost:55702/tags/research/</loc>
     <lastmod>2025-10-24T10:22:42-07:00</lastmod>
   </url><url>
-    <loc>https://jmalicki.github.io/blog/tags/</loc>
+    <loc>http://localhost:55702/tags/</loc>
     <lastmod>2025-10-24T10:22:42-07:00</lastmod>
   </url><url>
-    <loc>https://jmalicki.github.io/blog/tags/comparison/</loc>
-    <lastmod>2025-10-24T10:04:01-07:00</lastmod>
-  </url><url>
-    <loc>https://jmalicki.github.io/blog/tags/hugo/</loc>
-    <lastmod>2025-10-24T10:04:01-07:00</lastmod>
-  </url><url>
-    <loc>https://jmalicki.github.io/blog/posts/hugo-vs-other-static-generators/</loc>
-    <lastmod>2025-10-24T10:04:01-07:00</lastmod>
-  </url><url>
-    <loc>https://jmalicki.github.io/blog/tags/jekyll/</loc>
-    <lastmod>2025-10-24T10:04:01-07:00</lastmod>
-  </url><url>
-    <loc>https://jmalicki.github.io/blog/tags/nextjs/</loc>
-    <lastmod>2025-10-24T10:04:01-07:00</lastmod>
-  </url><url>
-    <loc>https://jmalicki.github.io/blog/tags/static-sites/</loc>
-    <lastmod>2025-10-24T10:04:01-07:00</lastmod>
-  </url><url>
-    <loc>https://jmalicki.github.io/blog/categories/technology/</loc>
-    <lastmod>2025-10-24T10:04:01-07:00</lastmod>
-  </url><url>
-    <loc>https://jmalicki.github.io/blog/tags/blog/</loc>
+    <loc>http://localhost:55702/tags/blog/</loc>
     <lastmod>2025-10-24T10:03:52-07:00</lastmod>
   </url><url>
-    <loc>https://jmalicki.github.io/blog/categories/general/</loc>
+    <loc>http://localhost:55702/categories/general/</loc>
     <lastmod>2025-10-24T10:03:52-07:00</lastmod>
   </url><url>
-    <loc>https://jmalicki.github.io/blog/tags/github-pages/</loc>
+    <loc>http://localhost:55702/tags/github-pages/</loc>
     <lastmod>2025-10-24T10:03:52-07:00</lastmod>
   </url><url>
-    <loc>https://jmalicki.github.io/blog/posts/welcome-to-my-blog/</loc>
+    <loc>http://localhost:55702/tags/hugo/</loc>
+    <lastmod>2025-10-24T10:03:52-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:55702/posts/welcome-to-my-blog/</loc>
     <lastmod>2025-10-24T10:03:52-07:00</lastmod>
   </url>
 </urlset>

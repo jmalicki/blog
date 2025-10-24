@@ -2,31 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on My Blog</title>
-    <link>https://jmalicki.github.io/blog/posts/</link>
+    <link>http://localhost:55702/posts/</link>
     <description>Recent content in Posts on My Blog</description>
     <generator>Hugo -- 0.152.1</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 24 Oct 2025 10:22:42 -0700</lastBuildDate>
-    <atom:link href="https://jmalicki.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:55702/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>PyTorchCon 2025 Conference Report</title>
-      <link>https://jmalicki.github.io/blog/posts/pytorchcon-2025-conference-report/</link>
+      <link>http://localhost:55702/posts/pytorchcon-2025-conference-report/</link>
       <pubDate>Fri, 24 Oct 2025 10:22:42 -0700</pubDate>
-      <guid>https://jmalicki.github.io/blog/posts/pytorchcon-2025-conference-report/</guid>
+      <guid>http://localhost:55702/posts/pytorchcon-2025-conference-report/</guid>
       <description>Highlights from PyTorchCon 2025: key talks, emerging trends, and research insights from the PyTorch ecosystem</description>
     </item>
     <item>
-      <title>Hugo vs Other Static Generators</title>
-      <link>https://jmalicki.github.io/blog/posts/hugo-vs-other-static-generators/</link>
-      <pubDate>Fri, 24 Oct 2025 10:04:01 -0700</pubDate>
-      <guid>https://jmalicki.github.io/blog/posts/hugo-vs-other-static-generators/</guid>
-      <description>Comparing Hugo with Jekyll, Next.js, and other static site generators</description>
-    </item>
-    <item>
       <title>Welcome to My Blog</title>
-      <link>https://jmalicki.github.io/blog/posts/welcome-to-my-blog/</link>
+      <link>http://localhost:55702/posts/welcome-to-my-blog/</link>
       <pubDate>Fri, 24 Oct 2025 10:03:52 -0700</pubDate>
-      <guid>https://jmalicki.github.io/blog/posts/welcome-to-my-blog/</guid>
+      <guid>http://localhost:55702/posts/welcome-to-my-blog/</guid>
       <description>My first blog post using Hugo and GitHub Pages</description>
     </item>
   </channel>

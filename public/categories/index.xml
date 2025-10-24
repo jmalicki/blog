@@ -2,31 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Categories on My Blog</title>
-    <link>https://jmalicki.github.io/blog/categories/</link>
+    <link>http://localhost:55702/categories/</link>
     <description>Recent content in Categories on My Blog</description>
     <generator>Hugo -- 0.152.1</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 24 Oct 2025 10:22:42 -0700</lastBuildDate>
-    <atom:link href="https://jmalicki.github.io/blog/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:55702/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Conference</title>
-      <link>https://jmalicki.github.io/blog/categories/conference/</link>
+      <link>http://localhost:55702/categories/conference/</link>
       <pubDate>Fri, 24 Oct 2025 10:22:42 -0700</pubDate>
-      <guid>https://jmalicki.github.io/blog/categories/conference/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Technology</title>
-      <link>https://jmalicki.github.io/blog/categories/technology/</link>
-      <pubDate>Fri, 24 Oct 2025 10:04:01 -0700</pubDate>
-      <guid>https://jmalicki.github.io/blog/categories/technology/</guid>
+      <guid>http://localhost:55702/categories/conference/</guid>
       <description></description>
     </item>
     <item>
       <title>General</title>
-      <link>https://jmalicki.github.io/blog/categories/general/</link>
+      <link>http://localhost:55702/categories/general/</link>
       <pubDate>Fri, 24 Oct 2025 10:03:52 -0700</pubDate>
-      <guid>https://jmalicki.github.io/blog/categories/general/</guid>
+      <guid>http://localhost:55702/categories/general/</guid>
       <description></description>
     </item>
   </channel>
