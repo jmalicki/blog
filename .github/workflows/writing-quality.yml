@@ -1,0 +1,48 @@
+name: Writing Quality Check
+
+on:
+  pull_request:
+    paths:
+      - 'content/**'
+  push:
+    branches: [ main ]
+    paths:
+      - 'content/**'
+
+jobs:
+  writing-quality:
+    runs-on: ubuntu-latest
+    name: Writing Quality Analysis
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Writing quality check
+        uses: textlint/textlint-action@v1
+        with:
+          files: 'content/**/*.md'
+          config: '.github/textlint.json'
+
+      - name: Inclusive language check
+        uses: get-woke/woke-action@v0.2.0
+        with:
+          files: 'content/**/*.md'
+          config: '.github/woke.yaml'
+
+      - name: AI Content Analysis
+        uses: textstat/textstat-action@v1
+        with:
+          files: 'content/**/*.md'
+          analysis: 'readability,sentiment,complexity'
+          min-grade: 8
+          max-complexity: 15
+
+      - name: Upload writing quality report
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: writing-quality-report
+          path: writing-report.md

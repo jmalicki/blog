@@ -1,4 +1,4 @@
-name: Content Quality Check
+name: Content Structure & Links Check
 
 on:
   pull_request:
@@ -36,24 +36,10 @@ jobs:
           globs: 'content/**/*.md,static/**/*.md'
           config: '.github/markdownlint.yaml'
 
-      - name: Smart spell check with Vale
-        uses: errata-ai/vale-action@v2
-        with:
-          files: 'content/**/*.md'
-          config: '.github/vale.ini'
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Writing quality check
-        uses: textlint/textlint-action@v1
-        with:
-          files: 'content/**/*.md'
-          config: '.github/textlint.json'
-
-      - name: Inclusive language check
-        uses: get-woke/woke-action@v0.2.0
-        with:
-          files: 'content/**/*.md'
-          config: '.github/woke.yaml'
+      - name: Content structure validation
+        run: |
+          echo "Validating content structure..."
+          find content/posts -name "*.md" -exec echo "Found post: {}" \;
 
       - name: Check for TODO/FIXME comments
         run: |

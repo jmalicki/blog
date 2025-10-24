@@ -1,0 +1,35 @@
+name: Spell Check
+
+on:
+  pull_request:
+    paths:
+      - 'content/**'
+  push:
+    branches: [ main ]
+    paths:
+      - 'content/**'
+
+jobs:
+  spell-check:
+    runs-on: ubuntu-latest
+    name: Smart Spell Check with Vale
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Smart spell check with Vale
+        uses: errata-ai/vale-action@v2
+        with:
+          files: 'content/**/*.md'
+          config: '.github/vale.ini'
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Upload spell check report
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: spell-check-report
+          path: vale-report.md
