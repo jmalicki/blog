@@ -1,0 +1,34 @@
+# AI/ML Technical Terms
+# Terms specific to artificial intelligence and machine learning
+
+extends: substitution
+message: "'%s' is not recognized as an AI/ML technical term"
+level: warning
+
+# AI/ML Frameworks
+PyTorch
+TensorFlow
+Keras
+Scikit-learn
+JAX
+HuggingFace
+Transformers
+
+# AI/ML Concepts
+Neural Networks
+Deep Learning
+Machine Learning
+Natural Language Processing
+Computer Vision
+Reinforcement Learning
+Supervised Learning
+Unsupervised Learning
+Transfer Learning
+Fine-tuning
+Embeddings
+Attention
+Transformer
+BERT
+GPT
+LLM
+Large Language Model

@@ -1,0 +1,29 @@
+# DevOps Technical Terms
+# Terms specific to DevOps, infrastructure, and deployment
+
+extends: substitution
+message: "'%s' is not recognized as a DevOps technical term"
+level: warning
+
+# Cloud Platforms
+AWS
+Azure
+GCP
+Google Cloud Platform
+DigitalOcean
+Vercel
+Netlify
+Cloudflare
+
+# DevOps Tools
+Docker
+Kubernetes
+Terraform
+Ansible
+Jenkins
+GitHub Actions
+CI/CD
+Infrastructure as Code
+Microservices
+Containerization
+Orchestration

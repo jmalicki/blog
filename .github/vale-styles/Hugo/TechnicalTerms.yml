@@ -1,0 +1,12 @@
+# Technical Terms for Hugo Blog
+# Custom technical terms for the blog
+
+extends: substitution
+message: "'%s' is not recognized as a technical term"
+level: warning
+
+# Technologies
+GitHub
+Markdown
+RSS
+SSH

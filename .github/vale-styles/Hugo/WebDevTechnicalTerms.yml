@@ -1,0 +1,31 @@
+# Web Development Technical Terms
+# Terms specific to web development and frontend/backend
+
+extends: substitution
+message: "'%s' is not recognized as a web development technical term"
+level: warning
+
+# Web Frameworks
+React
+Vue
+Angular
+Svelte
+Next.js
+Nuxt.js
+Gatsby
+Astro
+SvelteKit
+
+# Web Technologies
+HTML
+CSS
+JavaScript
+TypeScript
+Node.js
+Express
+Webpack
+Vite
+Tailwind CSS
+Bootstrap
+Sass
+SCSS
