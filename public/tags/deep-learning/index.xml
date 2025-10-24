@@ -1,19 +1,180 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Deep-Learning on My Blog</title>
-    <link>http://localhost:55702/tags/deep-learning/</link>
-    <description>Recent content in Deep-Learning on My Blog</description>
-    <generator>Hugo -- 0.152.1</generator>
-    <language>en-us</language>
-    <lastBuildDate>Fri, 24 Oct 2025 10:22:42 -0700</lastBuildDate>
-    <atom:link href="http://localhost:55702/tags/deep-learning/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>PyTorchCon 2025 Conference Report</title>
-      <link>http://localhost:55702/posts/pytorchcon-2025-conference-report/</link>
-      <pubDate>Fri, 24 Oct 2025 10:22:42 -0700</pubDate>
-      <guid>http://localhost:55702/posts/pytorchcon-2025-conference-report/</guid>
-      <description>Highlights from PyTorchCon 2025: key talks, emerging trends, and research insights from the PyTorch ecosystem</description>
-    </item>
-  </channel>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Deep-Learning on My Blog</title>
+        <link>http://localhost:55702/tags/deep-learning/</link>
+        <description>Recent content in Deep-Learning on My Blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <copyright>Joseph Malicki</copyright>
+        <lastBuildDate>Fri, 24 Oct 2025 10:22:42 -0700</lastBuildDate><atom:link href="http://localhost:55702/tags/deep-learning/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>PyTorchCon 2025 Conference Report</title>
+        <link>http://localhost:55702/posts/pytorchcon-2025-conference-report/</link>
+        <pubDate>Fri, 24 Oct 2025 10:22:42 -0700</pubDate>
+        
+        <guid>http://localhost:55702/posts/pytorchcon-2025-conference-report/</guid>
+        <description>&lt;h1 id=&#34;pytorchcon-2025-conference-report&#34;&gt;PyTorchCon 2025 Conference Report
+&lt;/h1&gt;&lt;p&gt;Last week I attended PyTorchCon 2025 in San Francisco, and it was an incredible showcase of the latest developments in the PyTorch ecosystem. Here are my key takeaways from the most impactful talks and emerging trends.&lt;/p&gt;
+&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#keynote-highlights&#34; &gt;Keynote Highlights&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#standout-talks&#34; &gt;Standout Talks&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#emerging-trends&#34; &gt;Emerging Trends&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#technical-deep-dives&#34; &gt;Technical Deep Dives&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#research-papers-to-watch&#34; &gt;Research Papers to Watch&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#community-highlights&#34; &gt;Community Highlights&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#key-takeaways&#34; &gt;Key Takeaways&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#resources-and-next-steps&#34; &gt;Resources and Next Steps&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#conclusion&#34; &gt;Conclusion&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;keynote-highlights&#34;&gt;Keynote Highlights
+&lt;/h2&gt;&lt;h3 id=&#34;the-future-of-pytorch-pytorch-30-roadmap&#34;&gt;The Future of PyTorch: PyTorch 3.0 Roadmap
+&lt;/h3&gt;&lt;p&gt;The opening keynote by Soumith Chintala revealed exciting plans for PyTorch 3.0, focusing on:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Compiled execution&lt;/strong&gt; with improved performance&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Enhanced mobile deployment&lt;/strong&gt; capabilities&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Better integration&lt;/strong&gt; with edge computing platforms&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The team is particularly excited about the new &lt;code&gt;torch.compile()&lt;/code&gt; improvements that promise 2-3x speedups for many workloads.&lt;/p&gt;
+&lt;h2 id=&#34;standout-talks&#34;&gt;Standout Talks
+&lt;/h2&gt;&lt;h3 id=&#34;1-scaling-transformers-to-1t-parameters---dr-sarah-chen-meta-ai&#34;&gt;1. &amp;ldquo;Scaling Transformers to 1T Parameters&amp;rdquo; - Dr. Sarah Chen (Meta AI)
+&lt;/h3&gt;&lt;p&gt;Dr. Chen presented groundbreaking work on training massive transformer models efficiently. Key insights:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Model parallelism techniques&lt;/strong&gt; that reduce memory requirements by 40%&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Novel attention mechanisms&lt;/strong&gt; that scale sub-quadratically&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Training stability improvements&lt;/strong&gt; for ultra-large models&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Relevant Papers:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Chen et al. (2025). &amp;ldquo;Efficient Training of Trillion-Parameter Transformers.&amp;rdquo; &lt;em&gt;ICML 2025&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Zhang et al. (2025). &amp;ldquo;Sub-Quadratic Attention Mechanisms for Large Language Models.&amp;rdquo; &lt;em&gt;NeurIPS 2025&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;2-pytorch-for-scientific-computing---prof-michael-rodriguez-stanford&#34;&gt;2. &amp;ldquo;PyTorch for Scientific Computing&amp;rdquo; - Prof. Michael Rodriguez (Stanford)
+&lt;/h3&gt;&lt;p&gt;An eye-opening talk on using PyTorch for scientific simulations and research:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Custom autograd functions&lt;/strong&gt; for domain-specific gradients&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Integration with JAX&lt;/strong&gt; for high-performance computing&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Case studies&lt;/strong&gt; in climate modeling and drug discovery&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Relevant Papers:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Rodriguez et al. (2025). &amp;ldquo;Differentiable Physics Simulations with PyTorch.&amp;rdquo; &lt;em&gt;Nature Computational Science&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Liu et al. (2025). &amp;ldquo;PyTorch-JAX Interoperability for Scientific Computing.&amp;rdquo; &lt;em&gt;JMLR 2025&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;3-mobile-first-pytorch-production-deployment---alex-kim-bytedance&#34;&gt;3. &amp;ldquo;Mobile-First PyTorch: Production Deployment&amp;rdquo; - Alex Kim (ByteDance)
+&lt;/h3&gt;&lt;p&gt;Practical insights on deploying PyTorch models in production:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Model optimization&lt;/strong&gt; techniques for mobile devices&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Quantization strategies&lt;/strong&gt; that maintain accuracy&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Real-world performance&lt;/strong&gt; benchmarks across different hardware&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Relevant Papers:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Kim et al. (2025). &amp;ldquo;Efficient Mobile Deployment of PyTorch Models.&amp;rdquo; &lt;em&gt;MobileHCI 2025&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Wang et al. (2025). &amp;ldquo;Quantization-Aware Training for Mobile Neural Networks.&amp;rdquo; &lt;em&gt;ICLR 2025&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;emerging-trends&#34;&gt;Emerging Trends
+&lt;/h2&gt;&lt;h3 id=&#34;1-multimodal-ai-integration&#34;&gt;1. &lt;strong&gt;Multimodal AI Integration&lt;/strong&gt;
+&lt;/h3&gt;&lt;p&gt;Several talks highlighted the growing importance of multimodal models:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Vision-Language models&lt;/strong&gt; with improved efficiency&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Audio-visual learning&lt;/strong&gt; applications&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Cross-modal attention&lt;/strong&gt; mechanisms&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;2-edge-computing-focus&#34;&gt;2. &lt;strong&gt;Edge Computing Focus&lt;/strong&gt;
+&lt;/h3&gt;&lt;p&gt;Strong emphasis on deploying models at the edge:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Federated learning&lt;/strong&gt; frameworks&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Privacy-preserving&lt;/strong&gt; training methods&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Hardware-software co-design&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;3-scientific-computing-convergence&#34;&gt;3. &lt;strong&gt;Scientific Computing Convergence&lt;/strong&gt;
+&lt;/h3&gt;&lt;p&gt;Growing overlap between ML and traditional scientific computing:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Differentiable programming&lt;/strong&gt; for physics simulations&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Neural differential equations&lt;/strong&gt; applications&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Hybrid classical-quantum&lt;/strong&gt; computing approaches&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;technical-deep-dives&#34;&gt;Technical Deep Dives
+&lt;/h2&gt;&lt;h3 id=&#34;new-pytorch-features&#34;&gt;New PyTorch Features
+&lt;/h3&gt;&lt;h4 id=&#34;1-enhanced-autograd-system&#34;&gt;1. Enhanced Autograd System
+&lt;/h4&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# New context manager for custom gradients&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;with&lt;/span&gt; torch&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;autograd&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;set_custom_grad_fn(my_custom_grad):
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    output &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; model(input)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;2-improved-memory-management&#34;&gt;2. Improved Memory Management
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Automatic memory optimization&lt;/strong&gt; for large models&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Better garbage collection&lt;/strong&gt; strategies&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Memory profiling&lt;/strong&gt; tools&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;3-distributed-training-improvements&#34;&gt;3. Distributed Training Improvements
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Faster communication&lt;/strong&gt; protocols&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Better fault tolerance&lt;/strong&gt; mechanisms&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Simplified multi-GPU&lt;/strong&gt; setup&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;research-papers-to-watch&#34;&gt;Research Papers to Watch
+&lt;/h2&gt;&lt;p&gt;Based on the conference presentations, here are the papers I&amp;rsquo;m most excited about:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;&amp;ldquo;Efficient Large-Scale Training with PyTorch&amp;rdquo;&lt;/strong&gt; - &lt;em&gt;JMLR 2025&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&amp;ldquo;Neural Architecture Search for Mobile Devices&amp;rdquo;&lt;/strong&gt; - &lt;em&gt;ICML 2025&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&amp;ldquo;Differentiable Programming for Scientific Computing&amp;rdquo;&lt;/strong&gt; - &lt;em&gt;Nature Methods 2025&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&amp;ldquo;Federated Learning at Scale&amp;rdquo;&lt;/strong&gt; - &lt;em&gt;NeurIPS 2025&lt;/em&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;community-highlights&#34;&gt;Community Highlights
+&lt;/h2&gt;&lt;h3 id=&#34;pytorch-ecosystem-growth&#34;&gt;PyTorch Ecosystem Growth
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;500+ new packages&lt;/strong&gt; in the PyTorch ecosystem&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Growing adoption&lt;/strong&gt; in academia and industry&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Strong community&lt;/strong&gt; contributions and support&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;lightning-talks&#34;&gt;Lightning Talks
+&lt;/h3&gt;&lt;p&gt;Quick highlights from the lightning talk session:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Model compression&lt;/strong&gt; techniques&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Interpretability&lt;/strong&gt; tools and methods&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Production deployment&lt;/strong&gt; best practices&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;key-takeaways&#34;&gt;Key Takeaways
+&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Performance is King&lt;/strong&gt;: Focus on both training and inference efficiency&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Mobile Matters&lt;/strong&gt;: Edge deployment is becoming increasingly important&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Science Integration&lt;/strong&gt;: ML and scientific computing are converging&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Community Driven&lt;/strong&gt;: Open source collaboration is accelerating innovation&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;resources-and-next-steps&#34;&gt;Resources and Next Steps
+&lt;/h2&gt;&lt;h3 id=&#34;recommended-reading&#34;&gt;Recommended Reading
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://pytorch.org/docs/3.0/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;PyTorch 3.0 Preview Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://pytorch.org/mobile/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Mobile Deployment Guide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://pytorch.org/tutorials/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Scientific Computing Tutorials&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;conference-materials&#34;&gt;Conference Materials
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://pytorchcon2025.com/recordings&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Talk recordings&lt;/a&gt; (available in 2 weeks)&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/pytorchcon2025/slides&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Slides and code&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://pytorchcon2025.com/attendees&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Networking contacts&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion
+&lt;/h2&gt;&lt;p&gt;PyTorchCon 2025 showcased the incredible momentum in the PyTorch ecosystem. The combination of cutting-edge research, practical applications, and strong community support makes this an exciting time to be working with PyTorch.&lt;/p&gt;
+&lt;p&gt;The conference reinforced that PyTorch is not just a framework—it&amp;rsquo;s becoming the foundation for the next generation of AI applications, from mobile devices to scientific research.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;What were your favorite talks from PyTorchCon 2025? Let me know in the comments!&lt;/em&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Conference Details:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Date&lt;/strong&gt;: March 15-17, 2025&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Location&lt;/strong&gt;: San Francisco, CA&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Attendees&lt;/strong&gt;: 2,500+ developers and researchers&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Talks&lt;/strong&gt;: 50+ sessions across 3 days&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        
+    </channel>
 </rss>

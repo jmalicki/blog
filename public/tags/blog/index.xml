@@ -1,19 +1,57 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Blog on My Blog</title>
-    <link>http://localhost:55702/tags/blog/</link>
-    <description>Recent content in Blog on My Blog</description>
-    <generator>Hugo -- 0.152.1</generator>
-    <language>en-us</language>
-    <lastBuildDate>Fri, 24 Oct 2025 10:03:52 -0700</lastBuildDate>
-    <atom:link href="http://localhost:55702/tags/blog/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Welcome to My Blog</title>
-      <link>http://localhost:55702/posts/welcome-to-my-blog/</link>
-      <pubDate>Fri, 24 Oct 2025 10:03:52 -0700</pubDate>
-      <guid>http://localhost:55702/posts/welcome-to-my-blog/</guid>
-      <description>My first blog post using Hugo and GitHub Pages</description>
-    </item>
-  </channel>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Blog on My Blog</title>
+        <link>http://localhost:55702/tags/blog/</link>
+        <description>Recent content in Blog on My Blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <copyright>Joseph Malicki</copyright>
+        <lastBuildDate>Fri, 24 Oct 2025 10:03:52 -0700</lastBuildDate><atom:link href="http://localhost:55702/tags/blog/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Welcome to My Blog</title>
+        <link>http://localhost:55702/posts/welcome-to-my-blog/</link>
+        <pubDate>Fri, 24 Oct 2025 10:03:52 -0700</pubDate>
+        
+        <guid>http://localhost:55702/posts/welcome-to-my-blog/</guid>
+        <description>&lt;h1 id=&#34;welcome-to-my-blog&#34;&gt;Welcome to My Blog!
+&lt;/h1&gt;&lt;p&gt;This is my first blog post using &lt;strong&gt;Hugo&lt;/strong&gt; and &lt;strong&gt;GitHub Pages&lt;/strong&gt;. I&amp;rsquo;m excited to share my thoughts on technology, development, and more.&lt;/p&gt;
+&lt;h2 id=&#34;what-you-can-expect&#34;&gt;What You Can Expect
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Technical insights&lt;/strong&gt; about software development&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Tutorials&lt;/strong&gt; and how-to guides&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Personal projects&lt;/strong&gt; and experiments&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Thoughts&lt;/strong&gt; on the tech industry&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;why-hugo&#34;&gt;Why Hugo?
+&lt;/h2&gt;&lt;p&gt;I chose Hugo because:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;⚡ &lt;strong&gt;Lightning fast&lt;/strong&gt; builds&lt;/li&gt;
+&lt;li&gt;🎨 &lt;strong&gt;Beautiful themes&lt;/strong&gt; like PaperMod&lt;/li&gt;
+&lt;li&gt;📱 &lt;strong&gt;Mobile responsive&lt;/strong&gt; design&lt;/li&gt;
+&lt;li&gt;🔍 &lt;strong&gt;Built-in search&lt;/strong&gt; functionality&lt;/li&gt;
+&lt;li&gt;📊 &lt;strong&gt;Automatic RSS&lt;/strong&gt; feeds&lt;/li&gt;
+&lt;li&gt;🏷️ &lt;strong&gt;Tag and category&lt;/strong&gt; organization&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;the-sidebar&#34;&gt;The Sidebar
+&lt;/h2&gt;&lt;p&gt;Notice the sidebar on the right? It shows:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Recent posts&lt;/strong&gt; (automatically updated)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Related posts&lt;/strong&gt; (based on tags)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Tag navigation&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Search functionality&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This is all built-in with Hugo and the PaperMod theme!&lt;/p&gt;
+&lt;h2 id=&#34;whats-next&#34;&gt;What&amp;rsquo;s Next?
+&lt;/h2&gt;&lt;p&gt;I&amp;rsquo;ll be posting regularly about:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Web development&lt;/li&gt;
+&lt;li&gt;DevOps and infrastructure&lt;/li&gt;
+&lt;li&gt;Open source projects&lt;/li&gt;
+&lt;li&gt;Career insights&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Thanks for reading, and welcome to my blog! 🚀&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
 </rss>

@@ -1,305 +1,322 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto">
+<html lang="en-us" dir="ltr">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=55702&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="Highlights from PyTorchCon 2025: key talks, emerging trends, and research insights from the PyTorch ecosystem">
+<title>PyTorchCon 2025 Conference Report</title>
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=55702&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
-<title>PyTorchCon 2025 Conference Report | My Blog</title>
-<meta name="keywords" content="pytorch, conference, machine-learning, research, deep-learning">
-<meta name="description" content="Highlights from PyTorchCon 2025: key talks, emerging trends, and research insights from the PyTorch ecosystem">
-<meta name="author" content="Joseph Malicki">
-<link rel="canonical" href="http://localhost:55702/posts/pytorchcon-2025-conference-report/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.a090830a421002426baafbd314e38f149d77b4c48a12ee9312700d770b27fb26.css" integrity="sha256-oJCDCkIQAkJrqvvTFOOPFJ13tMSKEu6TEnANdwsn&#43;yY=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:55702/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:55702/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:55702/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:55702/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:55702/safari-pinned-tab.svg">
-<meta name="theme-color" content="#2e2e33">
-<meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:55702/posts/pytorchcon-2025-conference-report/">
-<noscript>
-    <style>
-        #theme-toggle,
-        .top-link {
-            display: none;
-        }
+<link rel='canonical' href='http://localhost:55702/posts/pytorchcon-2025-conference-report/'>
 
-    </style>
-    <style>
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --theme: rgb(29, 30, 32);
-                --entry: rgb(46, 46, 51);
-                --primary: rgb(218, 218, 219);
-                --secondary: rgb(155, 156, 157);
-                --tertiary: rgb(65, 66, 68);
-                --content: rgb(196, 196, 197);
-                --code-block-bg: rgb(46, 46, 51);
-                --code-bg: rgb(55, 56, 62);
-                --border: rgb(51, 51, 51);
-            }
-
-            .list {
-                background: var(--theme);
-            }
-
-            .list:not(.dark)::-webkit-scrollbar-track {
-                background: 0 0;
-            }
-
-            .list:not(.dark)::-webkit-scrollbar-thumb {
-                border-color: var(--theme);
-            }
-        }
-
-    </style>
-</noscript><meta property="og:url" content="http://localhost:55702/posts/pytorchcon-2025-conference-report/">
-  <meta property="og:site_name" content="My Blog">
-  <meta property="og:title" content="PyTorchCon 2025 Conference Report">
-  <meta property="og:description" content="Highlights from PyTorchCon 2025: key talks, emerging trends, and research insights from the PyTorch ecosystem">
-  <meta property="og:locale" content="en-us">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2025-10-24T10:22:42-07:00">
-    <meta property="article:modified_time" content="2025-10-24T10:22:42-07:00">
-    <meta property="article:tag" content="Pytorch">
-    <meta property="article:tag" content="Conference">
-    <meta property="article:tag" content="Machine-Learning">
-    <meta property="article:tag" content="Research">
-    <meta property="article:tag" content="Deep-Learning">
-<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="/scss/style.min.6a692fd055deae459f2a9767f57f3855ba80cafd5041317f24f7360f6ca47cdf.css"><meta property='og:title' content="PyTorchCon 2025 Conference Report">
+<meta property='og:description' content="Highlights from PyTorchCon 2025: key talks, emerging trends, and research insights from the PyTorch ecosystem">
+<meta property='og:url' content='http://localhost:55702/posts/pytorchcon-2025-conference-report/'>
+<meta property='og:site_name' content='My Blog'>
+<meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:tag' content='pytorch' /><meta property='article:tag' content='conference' /><meta property='article:tag' content='machine-learning' /><meta property='article:tag' content='research' /><meta property='article:tag' content='deep-learning' /><meta property='article:published_time' content='2025-10-24T10:22:42-07:00'/><meta property='article:modified_time' content='2025-10-24T10:22:42-07:00'/>
 <meta name="twitter:title" content="PyTorchCon 2025 Conference Report">
 <meta name="twitter:description" content="Highlights from PyTorchCon 2025: key talks, emerging trends, and research insights from the PyTorch ecosystem">
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
 
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position":  1 ,
-      "name": "Posts",
-      "item": "http://localhost:55702/posts/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  2 ,
-      "name": "PyTorchCon 2025 Conference Report",
-      "item": "http://localhost:55702/posts/pytorchcon-2025-conference-report/"
-    }
-  ]
-}
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
 </script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "PyTorchCon 2025 Conference Report",
-  "name": "PyTorchCon 2025 Conference Report",
-  "description": "Highlights from PyTorchCon 2025: key talks, emerging trends, and research insights from the PyTorch ecosystem",
-  "keywords": [
-    "pytorch", "conference", "machine-learning", "research", "deep-learning"
-  ],
-  "articleBody": "PyTorchCon 2025 Conference Report Last week I attended PyTorchCon 2025 in San Francisco, and it was an incredible showcase of the latest developments in the PyTorch ecosystem. Here are my key takeaways from the most impactful talks and emerging trends.\nTable of Contents Keynote Highlights Standout Talks Emerging Trends Technical Deep Dives Research Papers to Watch Community Highlights Key Takeaways Resources and Next Steps Conclusion Keynote Highlights The Future of PyTorch: PyTorch 3.0 Roadmap The opening keynote by Soumith Chintala revealed exciting plans for PyTorch 3.0, focusing on:\nCompiled execution with improved performance Enhanced mobile deployment capabilities Better integration with edge computing platforms The team is particularly excited about the new torch.compile() improvements that promise 2-3x speedups for many workloads.\nStandout Talks 1. “Scaling Transformers to 1T Parameters” - Dr. Sarah Chen (Meta AI) Dr. Chen presented groundbreaking work on training massive transformer models efficiently. Key insights:\nModel parallelism techniques that reduce memory requirements by 40% Novel attention mechanisms that scale sub-quadratically Training stability improvements for ultra-large models Relevant Papers:\nChen et al. (2025). “Efficient Training of Trillion-Parameter Transformers.” ICML 2025 Zhang et al. (2025). “Sub-Quadratic Attention Mechanisms for Large Language Models.” NeurIPS 2025 2. “PyTorch for Scientific Computing” - Prof. Michael Rodriguez (Stanford) An eye-opening talk on using PyTorch for scientific simulations and research:\nCustom autograd functions for domain-specific gradients Integration with JAX for high-performance computing Case studies in climate modeling and drug discovery Relevant Papers:\nRodriguez et al. (2025). “Differentiable Physics Simulations with PyTorch.” Nature Computational Science Liu et al. (2025). “PyTorch-JAX Interoperability for Scientific Computing.” JMLR 2025 3. “Mobile-First PyTorch: Production Deployment” - Alex Kim (ByteDance) Practical insights on deploying PyTorch models in production:\nModel optimization techniques for mobile devices Quantization strategies that maintain accuracy Real-world performance benchmarks across different hardware Relevant Papers:\nKim et al. (2025). “Efficient Mobile Deployment of PyTorch Models.” MobileHCI 2025 Wang et al. (2025). “Quantization-Aware Training for Mobile Neural Networks.” ICLR 2025 Emerging Trends 1. Multimodal AI Integration Several talks highlighted the growing importance of multimodal models:\nVision-Language models with improved efficiency Audio-visual learning applications Cross-modal attention mechanisms 2. Edge Computing Focus Strong emphasis on deploying models at the edge:\nFederated learning frameworks Privacy-preserving training methods Hardware-software co-design 3. Scientific Computing Convergence Growing overlap between ML and traditional scientific computing:\nDifferentiable programming for physics simulations Neural differential equations applications Hybrid classical-quantum computing approaches Technical Deep Dives New PyTorch Features 1. Enhanced Autograd System # New context manager for custom gradients with torch.autograd.set_custom_grad_fn(my_custom_grad): output = model(input) 2. Improved Memory Management Automatic memory optimization for large models Better garbage collection strategies Memory profiling tools 3. Distributed Training Improvements Faster communication protocols Better fault tolerance mechanisms Simplified multi-GPU setup Research Papers to Watch Based on the conference presentations, here are the papers I’m most excited about:\n“Efficient Large-Scale Training with PyTorch” - JMLR 2025 “Neural Architecture Search for Mobile Devices” - ICML 2025 “Differentiable Programming for Scientific Computing” - Nature Methods 2025 “Federated Learning at Scale” - NeurIPS 2025 Community Highlights PyTorch Ecosystem Growth 500+ new packages in the PyTorch ecosystem Growing adoption in academia and industry Strong community contributions and support Lightning Talks Quick highlights from the lightning talk session:\nModel compression techniques Interpretability tools and methods Production deployment best practices Key Takeaways Performance is King: Focus on both training and inference efficiency Mobile Matters: Edge deployment is becoming increasingly important Science Integration: ML and scientific computing are converging Community Driven: Open source collaboration is accelerating innovation Resources and Next Steps Recommended Reading PyTorch 3.0 Preview Documentation Mobile Deployment Guide Scientific Computing Tutorials Conference Materials Talk recordings (available in 2 weeks) Slides and code Networking contacts Conclusion PyTorchCon 2025 showcased the incredible momentum in the PyTorch ecosystem. The combination of cutting-edge research, practical applications, and strong community support makes this an exciting time to be working with PyTorch.\nThe conference reinforced that PyTorch is not just a framework—it’s becoming the foundation for the next generation of AI applications, from mobile devices to scientific research.\nWhat were your favorite talks from PyTorchCon 2025? Let me know in the comments!\nConference Details:\nDate: March 15-17, 2025 Location: San Francisco, CA Attendees: 2,500+ developers and researchers Talks: 50+ sessions across 3 days ",
-  "wordCount" : "695",
-  "inLanguage": "en",
-  "datePublished": "2025-10-24T10:22:42-07:00",
-  "dateModified": "2025-10-24T10:22:42-07:00",
-  "author":{
-    "@type": "Person",
-    "name": "Joseph Malicki"
-  },
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "http://localhost:55702/posts/pytorchcon-2025-conference-report/"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "My Blog",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "http://localhost:55702/favicon.ico"
-    }
-  }
-}
-</script>
-</head>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
 
-<body class="" id="top">
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.body.classList.add('dark');
-    } else if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
-    }
-
-</script>
-
-<header class="header">
-    <nav class="nav">
-        <div class="logo">
-            <a href="http://localhost:55702/" accesskey="h" title="My Blog (Alt + H)">My Blog</a>
-            <div class="logo-switches">
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
-                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                    </svg>
-                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="5"></circle>
-                        <line x1="12" y1="1" x2="12" y2="3"></line>
-                        <line x1="12" y1="21" x2="12" y2="23"></line>
-                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                        <line x1="1" y1="12" x2="3" y2="12"></line>
-                        <line x1="21" y1="12" x2="23" y2="12"></line>
-                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                    </svg>
-                </button>
-            </div>
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu_f509edb42ecc0ebd.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">📝</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">My Blog</a></h1>
+            <h2 class="site-description">A blog about technology and development</h2>
         </div>
-        <ul id="menu">
-        </ul>
-    </nav>
-</header>
-<main class="main">
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='https://github.com/jmalicki'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
 
-<article class="post-single">
-  <header class="post-header">
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>Dark Mode</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">Table of contents</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#table-of-contents">Table of Contents</a></li>
+    <li><a href="#keynote-highlights">Keynote Highlights</a>
+      <ul>
+        <li><a href="#the-future-of-pytorch-pytorch-30-roadmap">The Future of PyTorch: PyTorch 3.0 Roadmap</a></li>
+      </ul>
+    </li>
+    <li><a href="#standout-talks">Standout Talks</a>
+      <ul>
+        <li><a href="#1-scaling-transformers-to-1t-parameters---dr-sarah-chen-meta-ai">1. &ldquo;Scaling Transformers to 1T Parameters&rdquo; - Dr. Sarah Chen (Meta AI)</a></li>
+        <li><a href="#2-pytorch-for-scientific-computing---prof-michael-rodriguez-stanford">2. &ldquo;PyTorch for Scientific Computing&rdquo; - Prof. Michael Rodriguez (Stanford)</a></li>
+        <li><a href="#3-mobile-first-pytorch-production-deployment---alex-kim-bytedance">3. &ldquo;Mobile-First PyTorch: Production Deployment&rdquo; - Alex Kim (ByteDance)</a></li>
+      </ul>
+    </li>
+    <li><a href="#emerging-trends">Emerging Trends</a>
+      <ul>
+        <li><a href="#1-multimodal-ai-integration">1. <strong>Multimodal AI Integration</strong></a></li>
+        <li><a href="#2-edge-computing-focus">2. <strong>Edge Computing Focus</strong></a></li>
+        <li><a href="#3-scientific-computing-convergence">3. <strong>Scientific Computing Convergence</strong></a></li>
+      </ul>
+    </li>
+    <li><a href="#technical-deep-dives">Technical Deep Dives</a>
+      <ul>
+        <li><a href="#new-pytorch-features">New PyTorch Features</a></li>
+      </ul>
+    </li>
+    <li><a href="#research-papers-to-watch">Research Papers to Watch</a></li>
+    <li><a href="#community-highlights">Community Highlights</a>
+      <ul>
+        <li><a href="#pytorch-ecosystem-growth">PyTorch Ecosystem Growth</a></li>
+        <li><a href="#lightning-talks">Lightning Talks</a></li>
+      </ul>
+    </li>
+    <li><a href="#key-takeaways">Key Takeaways</a></li>
+    <li><a href="#resources-and-next-steps">Resources and Next Steps</a>
+      <ul>
+        <li><a href="#recommended-reading">Recommended Reading</a></li>
+        <li><a href="#conference-materials">Conference Materials</a></li>
+      </ul>
+    </li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
     
-    <h1 class="post-title entry-hint-parent">
-      PyTorchCon 2025 Conference Report
-      <span class="entry-hint" title="Draft">
-        <svg xmlns="http://www.w3.org/2000/svg" height="35" viewBox="0 -960 960 960" fill="currentColor">
-          <path
-            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
-        </svg>
-      </span>
-    </h1>
-    <div class="post-description">
-      Highlights from PyTorchCon 2025: key talks, emerging trends, and research insights from the PyTorch ecosystem
+    <header class="article-category">
+        
+            <a href="/categories/conference/" >
+                Conference
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/posts/pytorchcon-2025-conference-report/">PyTorchCon 2025 Conference Report</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            Highlights from PyTorchCon 2025: key talks, emerging trends, and research insights from the PyTorch ecosystem
+        </h3>
+        
     </div>
-    <div class="post-meta"><span title='2025-10-24 10:22:42 -0700 PDT'>October 24, 2025</span>&nbsp;·&nbsp;<span>4 min</span>&nbsp;·&nbsp;<span>Joseph Malicki</span>
 
-</div>
-  </header> <div class="toc">
-    <details >
-        <summary accesskey="c" title="(Alt + C)">
-            <span class="details">Table of Contents</span>
-        </summary>
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Oct 24, 2025</time>
+            </div>
+        
 
-        <div class="inner"><ul>
-                <li>
-                    <a href="#pytorchcon-2025-conference-report" aria-label="PyTorchCon 2025 Conference Report">PyTorchCon 2025 Conference Report</a><ul>
-                        
-                <li>
-                    <a href="#table-of-contents" aria-label="Table of Contents">Table of Contents</a></li>
-                <li>
-                    <a href="#keynote-highlights" aria-label="Keynote Highlights">Keynote Highlights</a><ul>
-                        
-                <li>
-                    <a href="#the-future-of-pytorch-pytorch-30-roadmap" aria-label="The Future of PyTorch: PyTorch 3.0 Roadmap">The Future of PyTorch: PyTorch 3.0 Roadmap</a></li></ul>
-                </li>
-                <li>
-                    <a href="#standout-talks" aria-label="Standout Talks">Standout Talks</a><ul>
-                        
-                <li>
-                    <a href="#1-scaling-transformers-to-1t-parameters---dr-sarah-chen-meta-ai" aria-label="1. &ldquo;Scaling Transformers to 1T Parameters&rdquo; - Dr. Sarah Chen (Meta AI)">1. &ldquo;Scaling Transformers to 1T Parameters&rdquo; - Dr. Sarah Chen (Meta AI)</a></li>
-                <li>
-                    <a href="#2-pytorch-for-scientific-computing---prof-michael-rodriguez-stanford" aria-label="2. &ldquo;PyTorch for Scientific Computing&rdquo; - Prof. Michael Rodriguez (Stanford)">2. &ldquo;PyTorch for Scientific Computing&rdquo; - Prof. Michael Rodriguez (Stanford)</a></li>
-                <li>
-                    <a href="#3-mobile-first-pytorch-production-deployment---alex-kim-bytedance" aria-label="3. &ldquo;Mobile-First PyTorch: Production Deployment&rdquo; - Alex Kim (ByteDance)">3. &ldquo;Mobile-First PyTorch: Production Deployment&rdquo; - Alex Kim (ByteDance)</a></li></ul>
-                </li>
-                <li>
-                    <a href="#emerging-trends" aria-label="Emerging Trends">Emerging Trends</a><ul>
-                        
-                <li>
-                    <a href="#1-multimodal-ai-integration" aria-label="1. Multimodal AI Integration">1. Multimodal AI Integration</a></li>
-                <li>
-                    <a href="#2-edge-computing-focus" aria-label="2. Edge Computing Focus">2. Edge Computing Focus</a></li>
-                <li>
-                    <a href="#3-scientific-computing-convergence" aria-label="3. Scientific Computing Convergence">3. Scientific Computing Convergence</a></li></ul>
-                </li>
-                <li>
-                    <a href="#technical-deep-dives" aria-label="Technical Deep Dives">Technical Deep Dives</a><ul>
-                        
-                <li>
-                    <a href="#new-pytorch-features" aria-label="New PyTorch Features">New PyTorch Features</a><ul>
-                        
-                <li>
-                    <a href="#1-enhanced-autograd-system" aria-label="1. Enhanced Autograd System">1. Enhanced Autograd System</a></li>
-                <li>
-                    <a href="#2-improved-memory-management" aria-label="2. Improved Memory Management">2. Improved Memory Management</a></li>
-                <li>
-                    <a href="#3-distributed-training-improvements" aria-label="3. Distributed Training Improvements">3. Distributed Training Improvements</a></li></ul>
-                </li></ul>
-                </li>
-                <li>
-                    <a href="#research-papers-to-watch" aria-label="Research Papers to Watch">Research Papers to Watch</a></li>
-                <li>
-                    <a href="#community-highlights" aria-label="Community Highlights">Community Highlights</a><ul>
-                        
-                <li>
-                    <a href="#pytorch-ecosystem-growth" aria-label="PyTorch Ecosystem Growth">PyTorch Ecosystem Growth</a></li>
-                <li>
-                    <a href="#lightning-talks" aria-label="Lightning Talks">Lightning Talks</a></li></ul>
-                </li>
-                <li>
-                    <a href="#key-takeaways" aria-label="Key Takeaways">Key Takeaways</a></li>
-                <li>
-                    <a href="#resources-and-next-steps" aria-label="Resources and Next Steps">Resources and Next Steps</a><ul>
-                        
-                <li>
-                    <a href="#recommended-reading" aria-label="Recommended Reading">Recommended Reading</a></li>
-                <li>
-                    <a href="#conference-materials" aria-label="Conference Materials">Conference Materials</a></li></ul>
-                </li>
-                <li>
-                    <a href="#conclusion" aria-label="Conclusion">Conclusion</a>
-                </li>
-            </ul>
-            </li>
-            </ul>
-        </div>
-    </details>
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    4 minute read
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
 </div>
 
-  <div class="post-content"><h1 id="pytorchcon-2025-conference-report">PyTorchCon 2025 Conference Report<a hidden class="anchor" aria-hidden="true" href="#pytorchcon-2025-conference-report">#</a></h1>
-<p>Last week I attended PyTorchCon 2025 in San Francisco, and it was an incredible showcase of the latest developments in the PyTorch ecosystem. Here are my key takeaways from the most impactful talks and emerging trends.</p>
-<h2 id="table-of-contents">Table of Contents<a hidden class="anchor" aria-hidden="true" href="#table-of-contents">#</a></h2>
-<ul>
-<li><a href="#keynote-highlights">Keynote Highlights</a></li>
-<li><a href="#standout-talks">Standout Talks</a></li>
-<li><a href="#emerging-trends">Emerging Trends</a></li>
-<li><a href="#technical-deep-dives">Technical Deep Dives</a></li>
-<li><a href="#research-papers-to-watch">Research Papers to Watch</a></li>
-<li><a href="#community-highlights">Community Highlights</a></li>
-<li><a href="#key-takeaways">Key Takeaways</a></li>
-<li><a href="#resources-and-next-steps">Resources and Next Steps</a></li>
-<li><a href="#conclusion">Conclusion</a></li>
+</header>
+
+    <section class="article-content">
+    
+    
+    <h1 id="pytorchcon-2025-conference-report">PyTorchCon 2025 Conference Report
+</h1><p>Last week I attended PyTorchCon 2025 in San Francisco, and it was an incredible showcase of the latest developments in the PyTorch ecosystem. Here are my key takeaways from the most impactful talks and emerging trends.</p>
+<h2 id="table-of-contents">Table of Contents
+</h2><ul>
+<li><a class="link" href="#keynote-highlights" >Keynote Highlights</a></li>
+<li><a class="link" href="#standout-talks" >Standout Talks</a></li>
+<li><a class="link" href="#emerging-trends" >Emerging Trends</a></li>
+<li><a class="link" href="#technical-deep-dives" >Technical Deep Dives</a></li>
+<li><a class="link" href="#research-papers-to-watch" >Research Papers to Watch</a></li>
+<li><a class="link" href="#community-highlights" >Community Highlights</a></li>
+<li><a class="link" href="#key-takeaways" >Key Takeaways</a></li>
+<li><a class="link" href="#resources-and-next-steps" >Resources and Next Steps</a></li>
+<li><a class="link" href="#conclusion" >Conclusion</a></li>
 </ul>
-<h2 id="keynote-highlights">Keynote Highlights<a hidden class="anchor" aria-hidden="true" href="#keynote-highlights">#</a></h2>
-<h3 id="the-future-of-pytorch-pytorch-30-roadmap">The Future of PyTorch: PyTorch 3.0 Roadmap<a hidden class="anchor" aria-hidden="true" href="#the-future-of-pytorch-pytorch-30-roadmap">#</a></h3>
-<p>The opening keynote by Soumith Chintala revealed exciting plans for PyTorch 3.0, focusing on:</p>
+<h2 id="keynote-highlights">Keynote Highlights
+</h2><h3 id="the-future-of-pytorch-pytorch-30-roadmap">The Future of PyTorch: PyTorch 3.0 Roadmap
+</h3><p>The opening keynote by Soumith Chintala revealed exciting plans for PyTorch 3.0, focusing on:</p>
 <ul>
 <li><strong>Compiled execution</strong> with improved performance</li>
 <li><strong>Enhanced mobile deployment</strong> capabilities</li>
 <li><strong>Better integration</strong> with edge computing platforms</li>
 </ul>
 <p>The team is particularly excited about the new <code>torch.compile()</code> improvements that promise 2-3x speedups for many workloads.</p>
-<h2 id="standout-talks">Standout Talks<a hidden class="anchor" aria-hidden="true" href="#standout-talks">#</a></h2>
-<h3 id="1-scaling-transformers-to-1t-parameters---dr-sarah-chen-meta-ai">1. &ldquo;Scaling Transformers to 1T Parameters&rdquo; - Dr. Sarah Chen (Meta AI)<a hidden class="anchor" aria-hidden="true" href="#1-scaling-transformers-to-1t-parameters---dr-sarah-chen-meta-ai">#</a></h3>
-<p>Dr. Chen presented groundbreaking work on training massive transformer models efficiently. Key insights:</p>
+<h2 id="standout-talks">Standout Talks
+</h2><h3 id="1-scaling-transformers-to-1t-parameters---dr-sarah-chen-meta-ai">1. &ldquo;Scaling Transformers to 1T Parameters&rdquo; - Dr. Sarah Chen (Meta AI)
+</h3><p>Dr. Chen presented groundbreaking work on training massive transformer models efficiently. Key insights:</p>
 <ul>
 <li><strong>Model parallelism techniques</strong> that reduce memory requirements by 40%</li>
 <li><strong>Novel attention mechanisms</strong> that scale sub-quadratically</li>
@@ -310,8 +327,8 @@
 <li>Chen et al. (2025). &ldquo;Efficient Training of Trillion-Parameter Transformers.&rdquo; <em>ICML 2025</em></li>
 <li>Zhang et al. (2025). &ldquo;Sub-Quadratic Attention Mechanisms for Large Language Models.&rdquo; <em>NeurIPS 2025</em></li>
 </ul>
-<h3 id="2-pytorch-for-scientific-computing---prof-michael-rodriguez-stanford">2. &ldquo;PyTorch for Scientific Computing&rdquo; - Prof. Michael Rodriguez (Stanford)<a hidden class="anchor" aria-hidden="true" href="#2-pytorch-for-scientific-computing---prof-michael-rodriguez-stanford">#</a></h3>
-<p>An eye-opening talk on using PyTorch for scientific simulations and research:</p>
+<h3 id="2-pytorch-for-scientific-computing---prof-michael-rodriguez-stanford">2. &ldquo;PyTorch for Scientific Computing&rdquo; - Prof. Michael Rodriguez (Stanford)
+</h3><p>An eye-opening talk on using PyTorch for scientific simulations and research:</p>
 <ul>
 <li><strong>Custom autograd functions</strong> for domain-specific gradients</li>
 <li><strong>Integration with JAX</strong> for high-performance computing</li>
@@ -322,8 +339,8 @@
 <li>Rodriguez et al. (2025). &ldquo;Differentiable Physics Simulations with PyTorch.&rdquo; <em>Nature Computational Science</em></li>
 <li>Liu et al. (2025). &ldquo;PyTorch-JAX Interoperability for Scientific Computing.&rdquo; <em>JMLR 2025</em></li>
 </ul>
-<h3 id="3-mobile-first-pytorch-production-deployment---alex-kim-bytedance">3. &ldquo;Mobile-First PyTorch: Production Deployment&rdquo; - Alex Kim (ByteDance)<a hidden class="anchor" aria-hidden="true" href="#3-mobile-first-pytorch-production-deployment---alex-kim-bytedance">#</a></h3>
-<p>Practical insights on deploying PyTorch models in production:</p>
+<h3 id="3-mobile-first-pytorch-production-deployment---alex-kim-bytedance">3. &ldquo;Mobile-First PyTorch: Production Deployment&rdquo; - Alex Kim (ByteDance)
+</h3><p>Practical insights on deploying PyTorch models in production:</p>
 <ul>
 <li><strong>Model optimization</strong> techniques for mobile devices</li>
 <li><strong>Quantization strategies</strong> that maintain accuracy</li>
@@ -334,90 +351,96 @@
 <li>Kim et al. (2025). &ldquo;Efficient Mobile Deployment of PyTorch Models.&rdquo; <em>MobileHCI 2025</em></li>
 <li>Wang et al. (2025). &ldquo;Quantization-Aware Training for Mobile Neural Networks.&rdquo; <em>ICLR 2025</em></li>
 </ul>
-<h2 id="emerging-trends">Emerging Trends<a hidden class="anchor" aria-hidden="true" href="#emerging-trends">#</a></h2>
-<h3 id="1-multimodal-ai-integration">1. <strong>Multimodal AI Integration</strong><a hidden class="anchor" aria-hidden="true" href="#1-multimodal-ai-integration">#</a></h3>
-<p>Several talks highlighted the growing importance of multimodal models:</p>
+<h2 id="emerging-trends">Emerging Trends
+</h2><h3 id="1-multimodal-ai-integration">1. <strong>Multimodal AI Integration</strong>
+</h3><p>Several talks highlighted the growing importance of multimodal models:</p>
 <ul>
 <li><strong>Vision-Language models</strong> with improved efficiency</li>
 <li><strong>Audio-visual learning</strong> applications</li>
 <li><strong>Cross-modal attention</strong> mechanisms</li>
 </ul>
-<h3 id="2-edge-computing-focus">2. <strong>Edge Computing Focus</strong><a hidden class="anchor" aria-hidden="true" href="#2-edge-computing-focus">#</a></h3>
-<p>Strong emphasis on deploying models at the edge:</p>
+<h3 id="2-edge-computing-focus">2. <strong>Edge Computing Focus</strong>
+</h3><p>Strong emphasis on deploying models at the edge:</p>
 <ul>
 <li><strong>Federated learning</strong> frameworks</li>
 <li><strong>Privacy-preserving</strong> training methods</li>
 <li><strong>Hardware-software co-design</strong></li>
 </ul>
-<h3 id="3-scientific-computing-convergence">3. <strong>Scientific Computing Convergence</strong><a hidden class="anchor" aria-hidden="true" href="#3-scientific-computing-convergence">#</a></h3>
-<p>Growing overlap between ML and traditional scientific computing:</p>
+<h3 id="3-scientific-computing-convergence">3. <strong>Scientific Computing Convergence</strong>
+</h3><p>Growing overlap between ML and traditional scientific computing:</p>
 <ul>
 <li><strong>Differentiable programming</strong> for physics simulations</li>
 <li><strong>Neural differential equations</strong> applications</li>
 <li><strong>Hybrid classical-quantum</strong> computing approaches</li>
 </ul>
-<h2 id="technical-deep-dives">Technical Deep Dives<a hidden class="anchor" aria-hidden="true" href="#technical-deep-dives">#</a></h2>
-<h3 id="new-pytorch-features">New PyTorch Features<a hidden class="anchor" aria-hidden="true" href="#new-pytorch-features">#</a></h3>
-<h4 id="1-enhanced-autograd-system">1. Enhanced Autograd System<a hidden class="anchor" aria-hidden="true" href="#1-enhanced-autograd-system">#</a></h4>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># New context manager for custom gradients</span>
+<h2 id="technical-deep-dives">Technical Deep Dives
+</h2><h3 id="new-pytorch-features">New PyTorch Features
+</h3><h4 id="1-enhanced-autograd-system">1. Enhanced Autograd System
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># New context manager for custom gradients</span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">with</span> torch<span style="color:#f92672">.</span>autograd<span style="color:#f92672">.</span>set_custom_grad_fn(my_custom_grad):
 </span></span><span style="display:flex;"><span>    output <span style="color:#f92672">=</span> model(input)
-</span></span></code></pre></div><h4 id="2-improved-memory-management">2. Improved Memory Management<a hidden class="anchor" aria-hidden="true" href="#2-improved-memory-management">#</a></h4>
-<ul>
+</span></span></code></pre></div><h4 id="2-improved-memory-management">2. Improved Memory Management
+</h4><ul>
 <li><strong>Automatic memory optimization</strong> for large models</li>
 <li><strong>Better garbage collection</strong> strategies</li>
 <li><strong>Memory profiling</strong> tools</li>
 </ul>
-<h4 id="3-distributed-training-improvements">3. Distributed Training Improvements<a hidden class="anchor" aria-hidden="true" href="#3-distributed-training-improvements">#</a></h4>
-<ul>
+<h4 id="3-distributed-training-improvements">3. Distributed Training Improvements
+</h4><ul>
 <li><strong>Faster communication</strong> protocols</li>
 <li><strong>Better fault tolerance</strong> mechanisms</li>
 <li><strong>Simplified multi-GPU</strong> setup</li>
 </ul>
-<h2 id="research-papers-to-watch">Research Papers to Watch<a hidden class="anchor" aria-hidden="true" href="#research-papers-to-watch">#</a></h2>
-<p>Based on the conference presentations, here are the papers I&rsquo;m most excited about:</p>
+<h2 id="research-papers-to-watch">Research Papers to Watch
+</h2><p>Based on the conference presentations, here are the papers I&rsquo;m most excited about:</p>
 <ol>
 <li><strong>&ldquo;Efficient Large-Scale Training with PyTorch&rdquo;</strong> - <em>JMLR 2025</em></li>
 <li><strong>&ldquo;Neural Architecture Search for Mobile Devices&rdquo;</strong> - <em>ICML 2025</em></li>
 <li><strong>&ldquo;Differentiable Programming for Scientific Computing&rdquo;</strong> - <em>Nature Methods 2025</em></li>
 <li><strong>&ldquo;Federated Learning at Scale&rdquo;</strong> - <em>NeurIPS 2025</em></li>
 </ol>
-<h2 id="community-highlights">Community Highlights<a hidden class="anchor" aria-hidden="true" href="#community-highlights">#</a></h2>
-<h3 id="pytorch-ecosystem-growth">PyTorch Ecosystem Growth<a hidden class="anchor" aria-hidden="true" href="#pytorch-ecosystem-growth">#</a></h3>
-<ul>
+<h2 id="community-highlights">Community Highlights
+</h2><h3 id="pytorch-ecosystem-growth">PyTorch Ecosystem Growth
+</h3><ul>
 <li><strong>500+ new packages</strong> in the PyTorch ecosystem</li>
 <li><strong>Growing adoption</strong> in academia and industry</li>
 <li><strong>Strong community</strong> contributions and support</li>
 </ul>
-<h3 id="lightning-talks">Lightning Talks<a hidden class="anchor" aria-hidden="true" href="#lightning-talks">#</a></h3>
-<p>Quick highlights from the lightning talk session:</p>
+<h3 id="lightning-talks">Lightning Talks
+</h3><p>Quick highlights from the lightning talk session:</p>
 <ul>
 <li><strong>Model compression</strong> techniques</li>
 <li><strong>Interpretability</strong> tools and methods</li>
 <li><strong>Production deployment</strong> best practices</li>
 </ul>
-<h2 id="key-takeaways">Key Takeaways<a hidden class="anchor" aria-hidden="true" href="#key-takeaways">#</a></h2>
-<ol>
+<h2 id="key-takeaways">Key Takeaways
+</h2><ol>
 <li><strong>Performance is King</strong>: Focus on both training and inference efficiency</li>
 <li><strong>Mobile Matters</strong>: Edge deployment is becoming increasingly important</li>
 <li><strong>Science Integration</strong>: ML and scientific computing are converging</li>
 <li><strong>Community Driven</strong>: Open source collaboration is accelerating innovation</li>
 </ol>
-<h2 id="resources-and-next-steps">Resources and Next Steps<a hidden class="anchor" aria-hidden="true" href="#resources-and-next-steps">#</a></h2>
-<h3 id="recommended-reading">Recommended Reading<a hidden class="anchor" aria-hidden="true" href="#recommended-reading">#</a></h3>
-<ul>
-<li><a href="https://pytorch.org/docs/3.0/">PyTorch 3.0 Preview Documentation</a></li>
-<li><a href="https://pytorch.org/mobile/">Mobile Deployment Guide</a></li>
-<li><a href="https://pytorch.org/tutorials/">Scientific Computing Tutorials</a></li>
+<h2 id="resources-and-next-steps">Resources and Next Steps
+</h2><h3 id="recommended-reading">Recommended Reading
+</h3><ul>
+<li><a class="link" href="https://pytorch.org/docs/3.0/"  target="_blank" rel="noopener"
+    >PyTorch 3.0 Preview Documentation</a></li>
+<li><a class="link" href="https://pytorch.org/mobile/"  target="_blank" rel="noopener"
+    >Mobile Deployment Guide</a></li>
+<li><a class="link" href="https://pytorch.org/tutorials/"  target="_blank" rel="noopener"
+    >Scientific Computing Tutorials</a></li>
 </ul>
-<h3 id="conference-materials">Conference Materials<a hidden class="anchor" aria-hidden="true" href="#conference-materials">#</a></h3>
-<ul>
-<li><a href="https://pytorchcon2025.com/recordings">Talk recordings</a> (available in 2 weeks)</li>
-<li><a href="https://github.com/pytorchcon2025/slides">Slides and code</a></li>
-<li><a href="https://pytorchcon2025.com/attendees">Networking contacts</a></li>
+<h3 id="conference-materials">Conference Materials
+</h3><ul>
+<li><a class="link" href="https://pytorchcon2025.com/recordings"  target="_blank" rel="noopener"
+    >Talk recordings</a> (available in 2 weeks)</li>
+<li><a class="link" href="https://github.com/pytorchcon2025/slides"  target="_blank" rel="noopener"
+    >Slides and code</a></li>
+<li><a class="link" href="https://pytorchcon2025.com/attendees"  target="_blank" rel="noopener"
+    >Networking contacts</a></li>
 </ul>
-<h2 id="conclusion">Conclusion<a hidden class="anchor" aria-hidden="true" href="#conclusion">#</a></h2>
-<p>PyTorchCon 2025 showcased the incredible momentum in the PyTorch ecosystem. The combination of cutting-edge research, practical applications, and strong community support makes this an exciting time to be working with PyTorch.</p>
+<h2 id="conclusion">Conclusion
+</h2><p>PyTorchCon 2025 showcased the incredible momentum in the PyTorch ecosystem. The combination of cutting-edge research, practical applications, and strong community support makes this an exciting time to be working with PyTorch.</p>
 <p>The conference reinforced that PyTorch is not just a framework—it&rsquo;s becoming the foundation for the next generation of AI applications, from mobile devices to scientific research.</p>
 <p><em>What were your favorite talks from PyTorchCon 2025? Let me know in the comments!</em></p>
 <hr>
@@ -429,90 +452,163 @@
 <li><strong>Talks</strong>: 50+ sessions across 3 days</li>
 </ul>
 
+</section>
 
-  </div>
 
-  <footer class="post-footer">
-    <ul class="post-tags">
-      <li><a href="http://localhost:55702/tags/pytorch/">Pytorch</a></li>
-      <li><a href="http://localhost:55702/tags/conference/">Conference</a></li>
-      <li><a href="http://localhost:55702/tags/machine-learning/">Machine-Learning</a></li>
-      <li><a href="http://localhost:55702/tags/research/">Research</a></li>
-      <li><a href="http://localhost:55702/tags/deep-learning/">Deep-Learning</a></li>
-    </ul>
-  </footer>
-</article>
-    </main>
+    <footer class="article-footer">
     
-<footer class="footer">
-        <span>&copy; 2025 <a href="http://localhost:55702/">My Blog</a></span> · 
+    <section class="article-tags">
+        
+            <a href="/tags/pytorch/">Pytorch</a>
+        
+            <a href="/tags/conference/">Conference</a>
+        
+            <a href="/tags/machine-learning/">Machine-Learning</a>
+        
+            <a href="/tags/research/">Research</a>
+        
+            <a href="/tags/deep-learning/">Deep-Learning</a>
+        
+    </section>
 
-    <span>
-        Powered by
-        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
-        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
-    </span>
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2025 Joseph Malicki
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.31.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
 </footer>
-<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-        <path d="M12 6H0l6-6z" />
-    </svg>
-</a>
 
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.5475e2d0cb30bc9c6f892827c58b2980894b4ed57c88cc5a7ec75f525a291d5f.js" defer></script>
 <script>
-    let menu = document.getElementById('menu')
-    if (menu) {
-        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
-        menu.onscroll = function () {
-            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
-        }
-    }
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
 
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener("click", function (e) {
-            e.preventDefault();
-            var id = this.getAttribute("href").substr(1);
-            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
-                    behavior: "smooth"
-                });
-            } else {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
-            }
-            if (id === "top") {
-                history.replaceState(null, null, " ");
-            } else {
-                history.pushState(null, null, `#${id}`);
-            }
-        });
-    });
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
 
+        document.head.appendChild(customFont);
+    }());
 </script>
-<script>
-    var mybutton = document.getElementById("top-link");
-    window.onscroll = function () {
-        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-            mybutton.style.visibility = "visible";
-            mybutton.style.opacity = "1";
-        } else {
-            mybutton.style.visibility = "hidden";
-            mybutton.style.opacity = "0";
-        }
-    };
 
-</script>
-<script>
-    document.getElementById("theme-toggle").addEventListener("click", () => {
-        if (document.body.className.includes("dark")) {
-            document.body.classList.remove('dark');
-            localStorage.setItem("pref-theme", 'light');
-        } else {
-            document.body.classList.add('dark');
-            localStorage.setItem("pref-theme", 'dark');
-        }
-    })
-
-</script>
-</body>
-
+    </body>
 </html>
