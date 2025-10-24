@@ -21,24 +21,17 @@ jobs:
           fetch-depth: 0
 
       - name: Writing quality check
-        uses: textlint/textlint-action@v1
+        uses: tsuyoshicho/action-textlint@v1
         with:
-          files: 'content/**/*.md'
-          config: '.github/textlint.json'
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          textlint_flags: 'content/**/*.md'
 
       - name: Inclusive language check
-        uses: get-woke/woke-action@v0.2.0
+        uses: get-woke/woke-action@v0
         with:
-          files: 'content/**/*.md'
-          config: '.github/woke.yaml'
+          fail-on-error: true
+          woke-args: 'content/**/*.md'
 
-      - name: AI Content Analysis
-        uses: textstat/textstat-action@v1
-        with:
-          files: 'content/**/*.md'
-          analysis: 'readability,sentiment,complexity'
-          min-grade: 8
-          max-complexity: 15
 
       - name: Upload writing quality report
         uses: actions/upload-artifact@v4

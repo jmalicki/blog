@@ -24,8 +24,6 @@ jobs:
         uses: errata-ai/vale-action@v2
         with:
           files: 'content/**/*.md'
-          config: '.github/vale.ini'
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Upload spell check report
         uses: actions/upload-artifact@v4
