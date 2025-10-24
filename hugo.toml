@@ -1,0 +1,45 @@
+baseURL = 'https://josephmalicki.github.io/blog/'
+languageCode = 'en-us'
+title = 'Joseph Malicki Blog'
+theme = 'PaperMod'
+
+[params]
+  # Theme settings
+  env = 'production'
+  title = 'Joseph Malicki Blog'
+  description = 'A blog about technology, development, and more'
+  keywords = ['blog', 'technology', 'development', 'hugo']
+  author = 'Joseph Malicki'
+  
+  # Sidebar settings
+  sidebar = true
+  sidebarOpen = true
+  
+  # Recent posts in sidebar
+  recentPosts = 5
+  
+  # Related posts
+  relatedPosts = 3
+  
+  # Show tags and categories
+  showTags = true
+  showCategories = true
+  
+  # Search functionality
+  search = true
+  
+  # Social links
+  socialIcons = [
+    { name = 'github', url = 'https://github.com/josephmalicki' },
+    { name = 'twitter', url = 'https://twitter.com/josephmalicki' }
+  ]
+  
+  # Dark mode
+  defaultTheme = 'auto'
+  
+  # Reading time
+  showReadingTime = true
+  
+  # Table of contents
+  showToc = true
+  toc = true
