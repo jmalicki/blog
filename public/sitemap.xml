@@ -2,49 +2,49 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/blog/categories/</loc>
+    <loc>https://jmalicki.github.io/blog/categories/</loc>
     <lastmod>2025-10-24T10:04:01-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/tags/comparison/</loc>
+    <loc>https://jmalicki.github.io/blog/tags/comparison/</loc>
     <lastmod>2025-10-24T10:04:01-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/tags/hugo/</loc>
+    <loc>https://jmalicki.github.io/blog/tags/hugo/</loc>
     <lastmod>2025-10-24T10:04:01-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/posts/hugo-vs-other-static-generators/</loc>
+    <loc>https://jmalicki.github.io/blog/posts/hugo-vs-other-static-generators/</loc>
     <lastmod>2025-10-24T10:04:01-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/tags/jekyll/</loc>
+    <loc>https://jmalicki.github.io/blog/tags/jekyll/</loc>
     <lastmod>2025-10-24T10:04:01-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/</loc>
+    <loc>https://jmalicki.github.io/blog/</loc>
     <lastmod>2025-10-24T10:04:01-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/tags/nextjs/</loc>
+    <loc>https://jmalicki.github.io/blog/tags/nextjs/</loc>
     <lastmod>2025-10-24T10:04:01-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/posts/</loc>
+    <loc>https://jmalicki.github.io/blog/posts/</loc>
     <lastmod>2025-10-24T10:04:01-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/tags/static-sites/</loc>
+    <loc>https://jmalicki.github.io/blog/tags/static-sites/</loc>
     <lastmod>2025-10-24T10:04:01-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/tags/</loc>
+    <loc>https://jmalicki.github.io/blog/tags/</loc>
     <lastmod>2025-10-24T10:04:01-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/categories/technology/</loc>
+    <loc>https://jmalicki.github.io/blog/categories/technology/</loc>
     <lastmod>2025-10-24T10:04:01-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/tags/blog/</loc>
+    <loc>https://jmalicki.github.io/blog/tags/blog/</loc>
     <lastmod>2025-10-24T10:03:52-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/categories/general/</loc>
+    <loc>https://jmalicki.github.io/blog/categories/general/</loc>
     <lastmod>2025-10-24T10:03:52-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/tags/github-pages/</loc>
+    <loc>https://jmalicki.github.io/blog/tags/github-pages/</loc>
     <lastmod>2025-10-24T10:03:52-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/posts/welcome-to-my-blog/</loc>
+    <loc>https://jmalicki.github.io/blog/posts/welcome-to-my-blog/</loc>
     <lastmod>2025-10-24T10:03:52-07:00</lastmod>
   </url>
 </urlset>

@@ -1,15 +1,18 @@
-baseURL = 'https://josephmalicki.github.io/blog/'
+baseURL = 'https://jmalicki.github.io/blog/'
 languageCode = 'en-us'
-title = 'Joseph Malicki Blog'
+title = 'My Blog'
 theme = 'PaperMod'
 
 [params]
   # Theme settings
   env = 'production'
-  title = 'Joseph Malicki Blog'
-  description = 'A blog about technology, development, and more'
+  title = 'My Blog'
+  description = ''
   keywords = ['blog', 'technology', 'development']
   author = 'Joseph Malicki'
+  
+  # PaperMod specific settings
+  homeInfoParams = { Title = "My Blog", Content = "Welcome to my blog!" }
   
   # Sidebar settings
   sidebar = true
@@ -31,7 +34,6 @@ theme = 'PaperMod'
   # Social links
   socialIcons = [
     { name = 'github', url = 'https://github.com/jmalicki' },
-    { name = 'twitter', url = 'https://twitter.com/jmalicki' }
   ]
   
   # Dark mode
