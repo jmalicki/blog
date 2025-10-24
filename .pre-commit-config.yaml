@@ -1,0 +1,38 @@
+# Pre-commit hooks for Hugo blog
+# Install with: pre-commit install
+
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.5.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-yaml
+      - id: check-json
+      - id: check-merge-conflict
+      - id: check-added-large-files
+        args: ['--maxkb=1000']
+
+  - repo: https://github.com/igorshubovych/markdownlint-cli
+    rev: v0.37.0
+    hooks:
+      - id: markdownlint
+        args: ['--config', '.github/markdownlint.yaml']
+
+
+  # Vale disabled for now due to configuration issues
+  # - repo: https://github.com/errata-ai/vale
+  #   rev: v3.0.7
+  #   hooks:
+  #     - id: vale
+  #       args: ['--config', '.github/vale.ini']
+
+  - repo: local
+    hooks:
+      - id: hugo-check
+        name: Hugo syntax check
+        entry: hugo
+        args: ['--quiet', '--buildDrafts']
+        language: system
+        files: '\.(md|toml)$'
+        pass_filenames: false

@@ -1,0 +1,102 @@
+name: Content Quality Check
+
+on:
+  pull_request:
+    paths:
+      - 'content/**'
+      - 'static/**'
+      - 'assets/**'
+  push:
+    branches: [ main ]
+    paths:
+      - 'content/**'
+      - 'static/**'
+      - 'assets/**'
+
+jobs:
+  content-check:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Check for broken links
+        uses: gaurav-nelson/github-action-markdown-link-check@v1
+        with:
+          use-quiet-mode: 'yes'
+          use-verbose-mode: 'yes'
+          config-file: '.github/link-check-config.json'
+
+      - name: Markdown linting
+        uses: DavidAnson/markdownlint-cli2-action@v15
+        with:
+          globs: 'content/**/*.md,static/**/*.md'
+          config: '.github/markdownlint.yaml'
+
+      - name: Smart spell check with Vale
+        uses: errata-ai/vale-action@v2
+        with:
+          files: 'content/**/*.md'
+          config: '.github/vale.ini'
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Writing quality check
+        uses: textlint/textlint-action@v1
+        with:
+          files: 'content/**/*.md'
+          config: '.github/textlint.json'
+
+      - name: Inclusive language check
+        uses: get-woke/woke-action@v0.2.0
+        with:
+          files: 'content/**/*.md'
+          config: '.github/woke.yaml'
+
+      - name: Check for TODO/FIXME comments
+        run: |
+          if grep -r "TODO\|FIXME\|XXX" content/; then
+            echo "Found TODO/FIXME comments in content"
+            exit 1
+          fi
+
+      - name: Validate Hugo front matter
+        run: |
+          find content -name "*.md" -exec sh -c '
+            for file; do
+              if ! head -n 20 "$file" | grep -q "^+++$"; then
+                echo "Missing front matter in $file"
+                exit 1
+              fi
+            done
+          ' _ {} +
+
+      - name: Check image optimization
+        run: |
+          find static -name "*.jpg" -o -name "*.jpeg" -o -name "*.png" | while read img; do
+            size=$(stat -c%s "$img" 2>/dev/null || stat -f%z "$img" 2>/dev/null)
+            if [ "$size" -gt 1048576 ]; then
+              echo "Warning: Large image detected: $img ($size bytes)"
+            fi
+          done
+
+      - name: Generate content report
+        run: |
+          echo "# Content Quality Report" > content-report.md
+          echo "" >> content-report.md
+          echo "## Blog Posts" >> content-report.md
+          find content/posts -name "*.md" | wc -l | xargs echo "Total posts:" >> content-report.md
+          echo "" >> content-report.md
+          echo "## Recent Posts" >> content-report.md
+          find content/posts -name "*.md" -exec basename {} \; | head -5 >> content-report.md
+          echo "" >> content-report.md
+          echo "## Word Count" >> content-report.md
+          find content/posts -name "*.md" -exec wc -w {} \; | tail -1 >> content-report.md
+
+      - name: Upload content report
+        uses: actions/upload-artifact@v4
+        with:
+          name: content-quality-report
+          path: content-report.md
